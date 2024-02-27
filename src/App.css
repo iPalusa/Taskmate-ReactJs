@@ -1,0 +1,115 @@
+#root{
+  height: 100vh;
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+}
+
+#container{
+  height: 65%;
+  width: 80%;
+  border: 3px black dashed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#addTask{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#title{
+  font-size:45px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 6px  ;
+}
+
+#addTask #form{
+  height: 45px;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#addTask #form input{
+  height: 80%;
+  width: 45%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px ;
+  border: 1px solid grey;
+  font-size: medium;
+  color: black;
+  text-indent: 5px;
+}
+
+#addTask #form input:focus{
+  outline: none;
+}
+
+#addTask #form button{
+  height: 92%;
+  width: 9%;
+  border-radius: 0 12px 12px 0;
+  border: none;
+  background-color: rgb(91, 91, 215);
+  color: white;
+  font-weight: bold; 
+}
+
+#addTask #form button:hover{
+  background-color: rgb(68, 78, 219);
+}
+
+#taskList{
+  width: 65%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  overflow: scroll;
+}
+
+#taskList .todos{
+  width: 85%;
+  height: 30    %;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+#taskList .todos p{
+  border: 1px lightgray solid;
+  border-radius: 4px;
+  flex-wrap: wrap ;
+  width: 65%;
+  font-size: 22px;
+  margin-right: 12px;
+}
+
+#taskList .todos button{
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    margin: 5px;
+    width: 9%;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+#taskList .todos .delete{
+  background-color: coral;
+}
